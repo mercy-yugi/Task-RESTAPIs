@@ -1,56 +1,47 @@
-// products list
+// displaying the products list using the query selector all function in the DOM Manipulation.
 fetch('http://localhost:5000/products')
 .then(function(response) {
     return response.json();
 })
 .then(function(info) {
  console.log(info);
+ const productelements = document.querySelectorAll('products');
+ info.forEach(element => {
+ console.log(element);}
+ productelements.appendChild(element)
+ );
+})
 
-document.getElementById('products').style.flex = 4
-let AllProduct = document.getElementById('products')
-info.forEach(a => {
-    let ListOfProduct = document.createElement('li')
-    ListOfProduct.innerText = `${a.name}`
-    AllProduct.appendChild(ListOfProduct)
-})
-})
 .catch(function(error){
  console.log('error',error);
 });
-
-// fruits list
+// displaying the fruits list using the query selector all function in the DOM Manipulation.
 fetch('http://localhost:5000/products/fruits')
 .then(function(response) {
     return response.json();
 })
 .then(function(info) {
  console.log(info);
-
-let AllFruits = document.getElementById('fruList')
-info.forEach(b => {
-    let ListOfFruits = document.createElement('li')
-    ListOfFruits.innerText = `${b.name}`
-    AllFruits.appendChild(ListOfFruits)
-})
-})
+ const fruitelements = document.querySelectorAll('fruList');
+ info.forEach(element => {
+ console.log(element);}
+ fruuitelements.appendChild(element));
+ })
 .catch(function(error){
  console.log('error',error);
 });
 
-// vegetables list
+// displaying the vegetables list using the query selector all function in the DOM Manipulation.
 fetch('http://localhost:5000/products/vegetables')
 .then(function(response) {
     return response.json();
 })
 .then(function(info) {
  console.log(info);
-
-let AllVeges = document.getElementById('vegList')
-info.forEach(c => {
-    let ListOfVeges = document.createElement('li')
-    ListOfVeges.innerText = `${c.name}`
-    AllVeges.appendChild(ListOfVeges)
-})
+ const vegetableselements = document.querySelectorAll('vegList');
+ info.forEach(element => {
+ console.log(element);}
+ vegetableselements.appendChild(element));
 })
 .catch(function(error){
  console.log('error',error);
