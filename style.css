@@ -1,0 +1,26 @@
+*{
+    background-color: rgb(29, 36, 36);
+    color: aliceblue;
+
+}
+#products{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    font-size: larger;
+    font-weight: bolder;
+}
+#fruList{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    font-size: larger;
+    font-weight: bolder;
+}
+#vegList{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    font-size: larger;
+    font-weight: bolder;
+}
